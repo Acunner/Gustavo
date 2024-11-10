@@ -12,6 +12,16 @@
   </head>
 
   <body>
+    <!-- modal cart -->
+    <div id="modal-container" class="modal-container">
+      <div class="modal">
+        <button class="fechar" id="fechar">X</button>
+       <H1>CARRINHO</H1>
+
+        </p>
+      </div>
+    </div>
+    <!-- fim modal cart -->
     <header id="header_pc">
       <nav class="nav">
         <a class="logo" href="#">Batata Vip</a>
@@ -21,7 +31,7 @@
           <li><a href="#">Menu</a></li>
           <li><a href="#">Bebidas</a></li>
           <li>
-            <button id="buy_cart">
+            <button onclick="openModal()" id="buy_cart">
               <i class="fa-solid fa-bag-shopping"></i>
             </button>
           </li>
@@ -46,54 +56,178 @@
       </nav>
     </header>
 
-    <div class="promo">
-      <h1 class="price_promo">12,99R$</h1>
-      <div class="encart">
-        <!-- <img class="encart_img" src="./src/img/potato.png" alt="" /> -->
-      </div>
+    <div class="slider">
+      <div class="slides">
+        <!-- radio buttons -->
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+        <!-- fim radio buttons -->
 
-      <h1>Potato</h1>
+        <!-- slide images -->
+        <div class="slide first">
+          <img src="./src/img/potato2.png" alt="massacote" />
+        </div>
+
+        <div class="slide">
+          <img src="./src/img/potato.png" alt="massacote" />
+        </div>
+
+        <div class="slide">
+          <img src="./src/img/potato3.jpg" alt="massacote" />
+        </div>
+
+        <div class="slide">
+          <img src="./src/img/potato4.jpg" alt="massacote" />
+        </div>
+
+        <!-- fim slide images -->
+        <!-- navigation auto -->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--fim navigation auto -->
+      </div>
+      <div class="manual-navigation">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
     </div>
 
+
+
+    <h1 class="Name_menu">Cardápio</h1>
+    <!-- <h3>TRADICIONAIS</h3> -->
     <section class="menu">
       <div class="dishes">
+       
         <div class="dish">
           <div class="dish_img"><img src="./src/img/potato.png" alt="" /></div>
 
-          <h3 class="name_item">Batata recheada</h3>
-          <h4 class="description_item">
-            Batata simples com recheio de queijo e bacon
-          </h4>
-          <button class="add_cart"><span>Adicionar ao carrinho</span></button>
-        </div>
-
-        <div class="dish">
-          <div class="dish_img"><img src="./src/img/potato.png" alt="" /></div>
-
-          <h3 class="name_item">Batata recheada</h3>
-          <h4 class="description_item">
-            Batata simples com recheio de queijo e bacon
-          </h4>
-          <button class="add_cart"><span>Adicionar ao carrinho</span></button>
+          <h3 class="name_item">Strogonoff de carne</h3>
+         <var class="description_item_box">
+          <p class="description_item">
+            Tiras de carne temperada, molho de tomate caseiro, creme de leite, chamoignon,mussarela e catupiry ou cheddar
+          </p></var>
+          <div class="pc">
+            <span class="price">R$12,50</span>
+            <button class="add_cart">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
         </div>
         <div class="dish">
           <div class="dish_img"><img src="./src/img/potato.png" alt="" /></div>
 
-          <h3 class="name_item">Batata recheada</h3>
-          <h4 class="description_item">
-            Batata simples com recheio de queijo e bacon
-          </h4>
-          <button class="add_cart"><span>Adicionar ao carrinho</span></button>
+          <h3 class="name_item">Strogonoff de carne</h3>
+         <var class="description_item_box">
+          <p class="description_item">
+            Tiras de carne temperada, molho de tomate caseiro, creme de leite, chamoignon,mussarela e catupiry ou cheddar
+          </p></var>
+          <div class="pc">
+            <span class="price">R$12,50</span>
+            <button class="add_cart">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
         </div>
         <div class="dish">
           <div class="dish_img"><img src="./src/img/potato.png" alt="" /></div>
 
-          <h3 class="name_item">Batata recheada</h3>
-          <h4 class="description_item">
-            Batata simples com recheio de queijo e bacon
-          </h4>
-          <button class="add_cart"><span>Adicionar ao carrinho</span></button>
+          <h3 class="name_item">Strogonoff de carne</h3>
+         <var class="description_item_box">
+          <p class="description_item">
+            Tiras de carne temperada, molho de tomate caseiro, creme de leite, chamoignon,mussarela e catupiry ou cheddar
+          </p></var>
+          <div class="pc">
+            <span class="price">R$12,50</span>
+            <button class="add_cart">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
         </div>
+        <div class="dish">
+          <div class="dish_img"><img src="./src/img/potato.png" alt="" /></div>
+
+          <h3 class="name_item">Strogonoff de carne</h3>
+         <var class="description_item_box">
+          <p class="description_item">
+            Tiras de carne temperada, molho de tomate caseiro, creme de leite, chamoignon,mussarela e catupiry ou cheddar
+          </p></var>
+          <div class="pc">
+            <span class="price">R$12,50</span>
+            <button class="add_cart">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish_img"><img src="./src/img/potato.png" alt="" /></div>
+
+          <h3 class="name_item">Strogonoff de carne</h3>
+         <var class="description_item_box">
+          <p class="description_item">
+            Tiras de carne temperada, molho de tomate caseiro, creme de leite, chamoignon,mussarela e catupiry ou cheddar
+          </p></var>
+          <div class="pc">
+            <span class="price">R$12,50</span>
+            <button class="add_cart">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish_img"><img src="./src/img/potato.png" alt="" /></div>
+
+          <h3 class="name_item">Strogonoff de carne</h3>
+         <var class="description_item_box">
+          <p class="description_item">
+            Tiras de carne temperada, molho de tomate caseiro, creme de leite, chamoignon,mussarela e catupiry ou cheddar
+          </p></var>
+          <div class="pc">
+            <span class="price">R$12,50</span>
+            <button class="add_cart">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish_img"><img src="./src/img/potato.png" alt="" /></div>
+
+          <h3 class="name_item">Strogonoff de carne</h3>
+         <var class="description_item_box">
+          <p class="description_item">
+            Tiras de carne temperada, molho de tomate caseiro, creme de leite, chamoignon,mussarela e catupiry ou cheddar
+          </p></var>
+          <div class="pc">
+            <span class="price">R$12,50</span>
+            <button class="add_cart">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish_img"><img src="./src/img/potato.png" alt="" /></div>
+
+          <h3 class="name_item">Strogonoff de carne</h3>
+         <var class="description_item_box">
+          <p class="description_item">
+            Tiras de carne temperada, molho de tomate caseiro, creme de leite, chamoignon,mussarela e catupiry ou cheddar
+          </p></var>
+          <div class="pc">
+            <span class="price">R$12,50</span>
+            <button class="add_cart">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+       
       </div>
     </section>
 
